@@ -41,15 +41,14 @@ The following IP addresses were identified as the most frequent sources of faile
 ---
 
 ## 5. Additional Observations
-- **Username targeting:** Attempts were made mostly against common usernames such as `root`, `admin`, and `user` (if identifiable).
+- **Username targeting:** Attempts were made mostly against common usernames such as `root`, `admin`, and `user`.
 - **Port analysis:** All attacks were observed on SSH default port 22.
-- **Failed vs Successful Logins:** Ratio of failed to successful authentications was approximately `<ratio>`, indicating significant unauthorized access attempts.
-- **Geolocation (Optional):** The top attacking IPs predominantly originated from `<country/region details>` (if you mapped IPs to locations).
+- **Failed vs Successful Logins:** Ratio of failed to successful authentications was approximately `1,197:1`, indicating significant unauthorized access attempts.
 
 ---
 
 ## 6. Recommendations
-- **Implement account lockout policies** after `X` failed attempts within `Y` minutes.
+- **Implement account lockout policies** after `5` failed attempts within `1` minute.
 - **Enable multi-factor authentication** (MFA) to harden access to SSH services.
 - **Apply IP blacklisting or firewall rules** blocking the top malicious IPs temporarily.
 - **Monitor for similar activity patterns going forward** using Splunk alerts and dashboards developed.
@@ -63,13 +62,12 @@ This investigation highlighted key brute force patterns identifiable through log
 ---
 
 **Prepared by:** Yakshvardhan Jaitely  
-**Date:** `<Insert Date of Report>`
+**Date:** `8 August 2025`
 
 ---
 
 ### Appendix
-- SPL Queries used for analysis (refer to /search_queries folder)
-- Dashboard screenshots (refer to /dashboard_screenshots folder)
+- Dashboard screenshots (refer to /screenshots folder)
 
 ---
 
