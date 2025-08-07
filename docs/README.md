@@ -13,20 +13,23 @@ This repository contains raw log data, Splunk search queries (SPL) crafted for b
 - The logs capture detailed authentication events including successful logins, failed password attempts from various IP addresses, timestamps, ports, and usernames.
 
 ## Project Structure
-
-/splunk-bruteforce-project
+/splunk-brute-force-project
 │
-├── README.md # This project overview, instructions, and tips
-├── /data # Raw SSH brute force log files (e.g., ssh.log)
-├── /search_queries # Splunk SPL queries for analysis and detection
-│ ├── failed_login_search.spl
-│ ├── top_ips_count.spl
-│ └── alert_rule_example.spl
-├── /dashboard_screenshots # Screenshots of Splunk visualizations and dashboards
-│ ├── failed_logins_chart.png
-│ └── top_ips_column_chart.png
-├── incident_report.md # One-page summary of investigation, detections, and relevance
-└── LICENSE # License file 
+├── /data                      # Raw log files (e.g., ssh.log from Kaggle)
+├── /search_queries            # Splunk SPL queries with comments
+│   ├── failed_login_search.spl
+│   ├── top_ip_counts.spl
+│   └── alert_rule_example.spl
+├── /dashboard_screenshots     # Annotated screenshots of Splunk dashboards
+│   ├── failed_logins_chart.png
+│   └── top_ips_column_chart.png
+├── /docs                      # Project documentation and guides
+│   ├── incident_report.md     # Investigation summary, findings, recommendations
+│   ├── query_descriptions.md  # Explanation of SPL queries
+│   └── setup_guide.md         # How to set up Splunk, upload data, run queries
+│   └── README.md                  # Project overview, purpose, usage instructions
+├── /scripts                   # (Optional) Scripts used for data preparation or automation
+└── LICENSE                   # Optional open-source license file
 
 ## How to Use This Project
 
